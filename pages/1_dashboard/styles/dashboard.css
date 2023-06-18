@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('navigation.css');/*Подгружаем стили панели навигации*/
+
+:root{
+    --background-color: #F1F4FA;/*Цвет фона. Тёмная версия: #1A202C*/
+    --text-color: #06152B;/*Цвет текста. Тёмная версия: #FFFFFF*/
+    --nav-panel-bg-color: #FFFFFF;/*Цвет панели. Тёмная тема: #364153*/
+}
+
+.dashboard-container{
+    display:flex;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    /*width: 100vw;*/
+    
+}
