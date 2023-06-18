@@ -1,1 +1,13 @@
-@import url(styles/style.css)
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+    --background-color: #9F9F9F;/*Цвет фона. Тёмная версия: #1A202C*/
+    --text-color: #06152B;/*Цвет текста. Тёмная версия: #FFFFFF*/
+}
+
+.dashboard-container{
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'DM Sans', sans-serif;
+}
