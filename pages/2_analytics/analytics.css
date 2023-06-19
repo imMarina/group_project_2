@@ -1,1 +1,10 @@
-@import url(styles/style.css)
+@import url(styles/style.css);
+
+
+.nav-pills li a:hover {
+    background-color: rgb(231, 222, 222);
+}
+
+button {
+    background-color: #df3389;
+}
