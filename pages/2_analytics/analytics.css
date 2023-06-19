@@ -1,10 +1,26 @@
-@import url(styles/style.css);
+@import url('styles/style.css');
 
 
 .nav-pills li a:hover {
     background-color: rgb(231, 222, 222);
 }
 
-button {
-    background-color: #df3389;
+.number {
+    color: #FF69B4;
+}
+
+.upgrade {
+    position: relative;
+}
+
+.btn-absolute {
+    position: absolute;
+    bottom: 15%;
+    left: 18%;
+    width: 65%;
+    height: 15%;
+    color: white;
+    background-color: #FF69B4;
+    border-radius: 10px;
+    border: none;
 }
