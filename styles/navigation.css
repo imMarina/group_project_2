@@ -1,0 +1,228 @@
+:root {
+    --nav-panel-active-bg-color: #99B2C6;
+    /*Цвет фона активного элемента меню. Темная тема: #FFFFFF*/
+    --nav-panel-active-color: #3A36DB;
+    /*Цвет текста активного элемента меню. Темная тема: #605CFF*/
+    --nav-panel_mess-count_color: #FF69B4;
+    /*Цвет текста счётчика сообщений. Тёмная тема: #FF69B4*/
+    --nav-panel-button-font-color: #FFFFFF;
+    /*Цвет шрифта на кнопке Upgrade*/
+    --nav-panel-button-bg-color: #FF69B4;
+    /*Цвет фона кнопки Upgrade. Тёмная тема: #605CFF*/
+    --nav-panel-button-hover-bg-color: #E069B4;
+    /*Цвет фона кнопки Upgrade при наведении. Тёмная тема: #705CFF*/
+
+    --nav-panel-margin-toggle: 32px;
+    /*Убираемые маржины боковой панели*/
+    --nav-panel-margin-right: 32px;
+    /*Правый маржин фиксированного размера*/
+    --nav-panel_element-padding-left: 30px;
+}
+
+.nav-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--nav-panel-bg-color);
+
+    margin-top: var(--nav-panel-margin-toggle);
+    margin-bottom: var(--nav-panel-margin-toggle);
+    margin-left: var(--nav-panel-margin-toggle);
+    margin-right: var(--nav-panel-margin-right);
+
+    padding: 30px 0px;
+
+    max-height: 100%;
+    width: 85px;
+
+    overflow-x: hidden;
+    transition-property: margin-top, margin-bottom, margin-left, width;
+    transition-duration: 0.5s;
+}
+
+.nav-panel_logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo-name {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav-panel nav {
+    margin-top: 50px;
+    padding-right: 30px;
+}
+
+.nav-panel_element {
+    display: grid;
+    grid-template-columns: 50px 1fr 15px;
+    align-items: center;
+    height: 50px;
+    color: var(--nav-panel-active-color);
+}
+
+.nav-panel_element svg {
+    fill: var(--nav-panel-active-color);
+}
+
+
+.nav-panel_element svg {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: right;
+    color: #030229;
+}
+
+.nav-panel_element_text {
+    display: none;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 13px;
+    text-align: left;
+}
+
+a .nav-panel_element_text {
+    opacity: 40%;
+}
+
+.nav-panel_mess-count {
+    display: none;
+    grid-column: -1/-2;
+    color: var(--nav-panel_mess-count_color);
+    font-size: 10px;
+    background-color: rgba(255, 105, 180, 10%);
+    border-radius: 7px;
+}
+
+.nav-active-bg {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    opacity: 20%;
+    background-color: var(--nav-panel-active-bg-color);
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-right: 3px;
+}
+
+.nav-panel a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-panel a svg {
+    fill: var(--text-color);
+    opacity: 40%;
+}
+
+.nav-profile {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.nav-profile-upgrade {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 30px 25px;
+    height: 195px;
+    background-image: url("/pages/1_dashboard/images/upgrade.png");
+    border-radius: 20px;
+
+    width: 0px;
+    opacity: 0%;
+    transition-property: width, opacity;
+    transition-duration: 0.5s;
+}
+
+.nav-profile-upgrade button {
+    margin: 15px;
+    height: 33px;
+    border-radius: 10px;
+    width: 138px;
+    color: var(--nav-panel-button-font-color);
+    background-color: var(--nav-panel-button-bg-color);
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-profile-upgrade button:hover {
+    background-color: var(--nav-panel-button-hover-bg-color);
+}
+
+
+.nav-profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.nav-profile-details {
+    display: none;
+}
+
+.nav-profile-info-name {
+    font-size: 13px;
+    padding: 0px 10px;
+}
+
+.nav-profile-account-info {
+    font-size: 11px;
+    opacity: 50%;
+}
+
+.nav-profile-logout-expand,
+.nav-profile-logout-compact {
+    opacity: 40%;
+    padding: 0px 15px;
+}
+
+.nav-profile-logout-compact {
+    display: block;
+    padding: 20px 0px 0px;
+}
+
+
+/*--------------------------------------------------------------------------
+Блок стилей панели навигации, меняющих поведение при наведении*/
+.nav-panel:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 220px;
+}
+
+.nav-panel:hover .nav-panel_element_text,
+.nav-panel:hover .nav-panel_mess-count {
+    display: block;
+}
+
+.nav-panel:hover .nav-profile-upgrade {
+    width: 168px;
+    opacity: 100%;
+}
+
+.nav-panel:hover .nav-profile-upgrade button {
+    opacity: 100%;
+}
+
+.nav-panel:hover .nav-panel_mess-count {
+    display: block;
+}
+
+.nav-panel:hover .nav-profile-logout-compact,
+.nav-profile-logout-expand {
+    display: none;
+}
+
+.nav-panel:hover .nav-profile-details,
+.nav-panel:hover .nav-profile-logout-expand {
+    display: block;
+}
+
+/*
+-------------------------------------------------------------------------------*/
