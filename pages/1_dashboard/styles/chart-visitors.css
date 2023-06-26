@@ -1,0 +1,15 @@
+.dash-chart-container{
+    height: 100%;
+    max-width: 700px;
+
+    width: 100%;
+    /*flex-shrink: 1;
+    flex-grow: 1;*/
+    border: 1px maroon solid;
+}
+
+
+#visitChart{
+    /*max-width: 100%;*/
+    max-height: 100%;
+}

@@ -149,9 +149,172 @@
                     <input type="date">
                 </div>
             </header>
+            <div class="dashboard-top-card">
+                <div class="dashboard-card">
+                    <img src="images/images-dashboard/heart.svg" alt="heart">
+                    <div class="dashboard-card-text">
+                        <h2>178+</h2>
+                        <div class="dashboard-card-name">
+                            Favorite Services
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <img src="images/images-dashboard/sales.svg" alt="Sales">
+                    <div class="dashboard-card-text">
+                        <h2>20+</h2>
+                        <div class="dashboard-card-name">
+                            New Sales
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <img src="images/images-dashboard/Leads.svg" alt="Leads">
+                    <div class="dashboard-card-text">
+                        <h2>190+</h2>
+                        <div class="dashboard-card-name">
+                            New Leads
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <img src="images/images-dashboard/Referrals.svg" alt="Referrals">
+                    <div class="dashboard-card-text">
+                        <h2>12+</h2>
+                        <div class="dashboard-card-name">
+                            Referrals
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <main class="dashboard-main">
+                <div class="dash-visitors">
+                    <div class="dashboard-block-caption">
+                        <h3>Visitors</h3>
+                        <a href="#">...</a>
+                    </div>
+                    <div class="dash-chart-container">
+                        <canvas id="visitChart" width="400px" height="200px"></canvas>
+                    </div>
+
+                </div>
+                <div class="dash-status">
+                    <div class="dashboard-block-caption">
+                        <h3>Order Status</h3>
+                        <a href="#">...</a>
+                    </div>
+                    <div class="ring-diagr">
+                        <div class="pie animate z1" style="--p:100;--c:#f1f4fb;--b:16px;--w:230px;"></div>
+                        <div class="pie animate z2" style="--p:80;--c:#fe6ab3;--b:24px;--w:230px">
+                            <div class="diag-caption">
+                                <div class="ring-diag-caption-percent">80%</div>
+                                <div class="ring-diag-caption-info">Status</div>
+                            </div>
+                        </div>
+                        <div class="pie animate z3" style="--p:60;--c:#01aa9c;--b:28px; --w:230px;"></div>
+                        <div class="pie animate z4" style="--p:40;--c:#3a36db;--b:32px;--w:230px"></div>
+                    </div>
+                    <div class="dash-ring-diagr-legend">
+                        <div class="dash-ring-diagr-legend-item">
+                            <div class="dash-ring-diagr-legend-active"></div> Active
+                        </div>
+                        <div class="dash-ring-diagr-legend-item">
+                            <div class="dash-ring-diagr-legend-completed"></div> Completed
+                        </div>
+                        <div class="dash-ring-diagr-legend-item">
+                            <div class="dash-ring-diagr-legend-cancelled"></div> Cancelled
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-services">
+                    <div class="dashboard-block-caption">
+                        <h3>Recent Services</h3>
+                        <a href="#">...</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Order ID <img src="images/images-dashboard/dash-service-strelka.svg" alt="strelka">
+                                </th>
+                                <th>
+                                    Service Name <img src="images/images-dashboard/dash-service-strelka.svg"
+                                        alt="strelka">
+                                </th>
+                                <th>
+                                    Price <img src="images/images-dashboard/dash-service-strelka.svg" alt="strelka">
+                                </th>
+                                <th style="text-align: center;">
+                                    Total Order <img src="images/images-dashboard/dash-service-strelka.svg"
+                                        alt="strelka">
+                                </th>
+                                <th class="td-amount">Total Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#876364</td>
+                                <td class="td-service"><img src="images/images-dashboard/dash-services-1.svg" alt="1">
+                                    Ui/Ux Designing</td>
+                                <td>$178</td>
+                                <td class="td-order">
+                                    <div class="td-order-box">325</div>
+                                </td>
+                                <td class="td-amount">$1,46,660</td>
+                            </tr>
+
+                            <tr style="background-color: rgba(241, 244, 250, 0.5);">
+                                <td class="td-border-left">#876368</td>
+                                <td class="td-service"><img src="images/images-dashboard/dash-services-2.svg" alt="2">
+                                    Bug Fix</td>
+                                <td>$14</td>
+                                <td class="td-order">
+                                    <div class="td-order-box">53</div>
+                                </td>
+                                <td class="td-amount td-border-right">$46,660</td>
+                            </tr>
+
+                            <tr>
+                                <td>#876412</td>
+                                <td class="td-service"><img src="images/images-dashboard/dash-services-3.svg" alt="3">
+                                    Wordpress</td>
+                                <td>$21</td>
+                                <td class="td-order">
+                                    <div class="td-order-box">78</div>
+                                </td>
+                                <td class="td-amount">$3,46,676</td>
+                            </tr>
+
+                            <tr style="background-color: rgba(241, 244, 250, 0.5);">
+                                <td class="td-border-left">#876621</td>
+                                <td class="td-service"><img src="images/images-dashboard/dash-services-4.svg" alt="4">
+                                    Mobile Design</td>
+                                <td>$32</td>
+                                <td class="td-order">
+                                    <div class="td-order-box">98</div>
+                                </td>
+                                <td class="td-amount td-border-right">$3,46,981</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dash-top-serv">
+                    444
+                </div>
+            </main>
         </div>
     </div>
 </body>
+
+<!--Подключение скрипта прорисовки графиков и диаграмм. 
+    Инструкция здесь: https://code.tutsplus.com/series/getting-started-with-chartjs--cms-1160
+    -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/helpers.min.js"></script>
+<script src="js/chart.js"></script>
 
 </html>
