@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @import url('/styles/navigation.css');
-@import url('ring-diagr.css');/*fСтили кольцевой диаграммы. Взято отсюда https://techrocks.ru/2022/01/11/pie-chart-in-pure-css-and-html/*/
+@import url('ring-diagr.css');
+/*fСтили кольцевой диаграммы. Взято отсюда https://techrocks.ru/2022/01/11/pie-chart-in-pure-css-and-html/*/
 
 /*Подгружаем стили панели навигации*/
 
@@ -96,7 +97,7 @@ h1 {
 .dashboard-main {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
-    grid-template-rows: 431px 354px;
+    grid-template-rows: 431px 1fr;
     gap: 2vw;
     margin-top: 2vw;
 }
@@ -105,10 +106,12 @@ h1 {
     text-decoration: none;
 }
 
+/*1-я ячейка грида*/
 .dash-visitors {
     grid-column: 1/2;
     grid-row: 1/2;
     background-color: var(--nav-panel-bg-color);
+    border-radius: 11px;
 }
 
 .dashboard-main h3 {
@@ -127,58 +130,59 @@ h1 {
 /*-------------------------------
 Блок стилей кольцевой диаграммы*/
 /*------------------------------------------*/
-.ring-diagr{
-  display: grid;
-  grid-template-columns: 230px;
-  grid-template-rows: 230px;
+.ring-diagr {
+    display: grid;
+    grid-template-columns: 230px;
+    grid-template-rows: 230px;
 }
 
 
-.z1{
-  position: relative;
-  z-index:1;
-  grid-column: 1/2;
-  grid-row: 1/2;
+.z1 {
+    position: relative;
+    z-index: 1;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.z2{
-  position: relative;
-  z-index:2;
-  grid-column: 1/2;
-  grid-row: 1/2;
+.z2 {
+    position: relative;
+    z-index: 2;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.z3{
-  position: relative;
-  z-index:2;
-  grid-column: 1/2;
-  grid-row: 1/2;
+.z3 {
+    position: relative;
+    z-index: 2;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.z4{
-  position: relative;
-  z-index:4;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
- 
-.ring-diag-caption-percent{
-  text-align: center;
-  font-size: 30px;
+.z4 {
+    position: relative;
+    z-index: 4;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-.ring-diag-caption-info{
-  text-align: center;
-  font-size: 17px;
-  font-weight: 400;
-  opacity: 70%;
+.ring-diag-caption-percent {
+    text-align: center;
+    font-size: 30px;
 }
 
+.ring-diag-caption-info {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 70%;
+}
 
+/*2-я ячейка грида*/
 .dash-status {
     grid-column: 2/3;
     grid-row: 1/2;
     background-color: var(--nav-panel-bg-color);
+    border-radius: 11px;
     padding: 5% 5% 2.5%;
     display: flex;
     flex-direction: column;
@@ -187,21 +191,21 @@ h1 {
     flex-shrink: 1;
 }
 
-.dash-ring-diagr-legend{
+.dash-ring-diagr-legend {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
-.dash-ring-diagr-legend-item{
+.dash-ring-diagr-legend-item {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px 1.5%;
 }
 
-.dash-ring-diagr-legend-active{
+.dash-ring-diagr-legend-active {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -210,7 +214,7 @@ h1 {
     background-color: #3A36DB;
 }
 
-.dash-ring-diagr-legend-completed{
+.dash-ring-diagr-legend-completed {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -219,7 +223,7 @@ h1 {
     background-color: #03A89E;
 }
 
-.dash-ring-diagr-legend-cancelled{
+.dash-ring-diagr-legend-cancelled {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -228,23 +232,28 @@ h1 {
     background-color: #FF69B4;
 }
 
+/*3-я ячейка грида*/
 .dash-services {
     grid-column: 1/2;
     grid-row: 2/3;
     background-color: var(--nav-panel-bg-color);
+    border-radius: 11px;
     padding: 26px 26px 13px;
 }
 
+/*4-я ячейка грида*/
 .dash-top-serv {
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: var(--nav-panel-bg-color);
+    border-radius: 11px;
 }
 
 table {
     width: 100%;
     font-size: 13.35px;
     font-weight: 400;
+    border-collapse: collapse;
 }
 
 .dashboard-block-caption {
@@ -253,24 +262,65 @@ table {
     justify-content: space-between;
 }
 
+tr {
+    height: 57px;
+}
+
 th,
 td {
     font-weight: 400;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 1vw;
+}
+
+td {
+    vertical-align: middle;
+}
+
+th {
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(6, 21, 43, 5%);
 }
 
 th img {
     cursor: pointer;
 }
 
+.td-border-left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.td-border-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.td-service {
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+
+.td-service img {
+    margin-right: 10px;
+}
+
 .td-order {
     text-align: center;
     color: #3A36DB;
+    text-align: center;
+}
+
+.td-order-box {
     background-color: rgba(58, 54, 219, 0.2);
     border-radius: 8px;
+    width: 24px;
+    padding: 7px 20px;
+    margin: 10px auto;
 }
 
 .td-amount {
     text-align: right;
+    padding-right: 1vw;
 }
