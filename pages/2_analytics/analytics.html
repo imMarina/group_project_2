@@ -23,7 +23,7 @@
         <!-- nado sdelat position-fixed -->
 
         <!-- Start Sidebar/Navbar -->
-        <div class="col-auto min-vh-100 bg-white d-flex flex-column justify-content-around">
+        <div class="col-auto vh-100 bg-white d-flex flex-column justify-content-around">
 
             <div class="navbar-brand d-flex justify-content-center">
                 <img src="../../img/Logo.svg" alt="Logo">
@@ -109,7 +109,7 @@
         <div class="col">
 
             <!-- Start Header-top -->
-            <header class="container nav d-flex flex-column mt-4">
+            <header class="container nav d-flex flex-column mt-4 px-3">
                 <div class="d-flex flex-row" id="header-top">
                     <h1>Product Analytics</h1>
                     <div class="ms-auto">
@@ -128,17 +128,13 @@
             </header>
             <!-- Start Header-top -->
 
-            <main class="container-fluid mt-5">
-
+            <main class="container mt-5">
                 <div class="row d-flex flex-row flex-nowrap">
+                    <div class="col">
 
-                    <div class="col-8">
-
-                        <!-- gap-4 -->
-                        <div class="row d-flex flex-row flex-wrap">
-
-                            <!--Start Sales Card -->
-                            <div class="col">
+                        <div class="row">
+                            <div class="col d-flex flex-nowrap gap-5">
+                                <!--Start Sales Card -->
                                 <div class="card border-light position-relative" id="sales_block">
                                     <div class="dropdown position-absolute top-0 end-0">
                                         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -168,15 +164,12 @@
                                                 style="color: #06152B; opacity: 0.7;">5,00,874</span>
                                         </div>
                                     </div>
-                                    <div class="position-absolute bottom-0">
+                                    <div class="position-absolute" id="img_wave">
                                         <img src="../../img/Chart_blue.png" alt="">
                                     </div>
-                                </div>
-                            </div><!-- End Sales Card -->
+                                </div><!-- End Sales Card -->
 
-
-                            <!-- Revenue Card -->
-                            <div class="col">
+                                <!-- Revenue Card -->
                                 <div class="card border-light position-relative" id="sales_block">
                                     <div class="dropdown position-absolute top-0 end-0">
                                         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -204,16 +197,17 @@
                                                 style="color: #06152B; opacity: 0.7;">2,34,888</span>
                                         </div>
                                     </div>
-                                    <div class="position-absolute bottom-0">
+                                    <div class="position-absolute" id="img_wave">
                                         <img src="../../img/Chart_pink.png" alt="">
                                     </div>
                                 </div>
+                                <!-- End Revenue Card -->
                             </div>
-                            <!-- End Revenue Card -->
+                        </div>
 
-                            <!-- Top Selling -->
-
-                            <div class="col mt-lg-4">
+                        <div class="row">
+                            <!-- Start Top Selling -->
+                            <div class="col mt-4">
                                 <div class="card border-light position-relative" id="top_selling_block">
                                     <div class="dropdown position-absolute top-0 end-0">
                                         <button class="btn dropdown-toggle text-primary" type="button"
@@ -333,13 +327,13 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col ms-4">
 
                         <div class="row d-flex flex-column">
 
                             <!-- Start Progress Bars-->
                             <div class="col">
-                                <div class="card" id="analytics_block">
+                                <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title text-secondary fs-4">Product Add
                                             by Month</h5>
@@ -399,10 +393,10 @@
                             </div> <!-- End Progress Bars -->
 
                             <!-- Doughnut Chart -->
-                            <div class="col">
-                                <div class="card" id="analytics_block">
+                            <div class="col mt-4">
+                                <div class="card" id="analytics_block-2">
                                     <div class="card-body">
-                                        <h5 class="card-title">Product Sales Analytics</h5>
+                                        <h5 class="card-title text-secondary fs-4">Product Sales Analytics</h5>
                                         <canvas id="doughnutChart" style="max-height: 250px;"></canvas>
                                         <script>
                                             document.addEventListener("DOMContentLoaded", () => {
@@ -438,7 +432,7 @@
         </div> <!-- end col (after sidebar) -->
 
 
-        <script src="assets/vendor/chart.js/chart.umd.js"></script>
+        <script src="./chart_1.umd.js"></script>
 
         <!-- Fonts Awesome -->
         <script src="https://kit.fontawesome.com/725ecd5168.js" crossorigin="anonymous"></script>
