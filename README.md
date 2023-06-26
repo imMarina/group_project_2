@@ -3,6 +3,7 @@
 Групповой проект 2, ITgirlSchool
 
 Техническое задание (ТЗ):
+
 Сверстать административную панель сайта (админ-панель) по макету с Figma. 
 Ссылка в Figma: [https://www.figma.com/file/Pobm5LXxggvNycElG5oqVw/Admin-Dashboard-Web-(Community)?type=design&node-id=2-9758&t=qEEZyrt7tRVZfdZu-0]
 
