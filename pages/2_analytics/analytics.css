@@ -126,6 +126,20 @@ tbody a {
     background-position: center;
 }
 
+/* Start Progress-bar block*/
+
+#progress__first-color {
+    background-color: var(--color-primary-pink);
+}
+
+#progress__second-color {
+    background-color: var(--color-primary-blue);
+}
+
+#progress-bar_index {
+    width: 30px;
+}
+
 /* Can't work at the same time attributes bg-image and bg-color, why? */
 
 /*.card-img-inside-1 {
