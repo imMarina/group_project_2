@@ -183,8 +183,14 @@
 
             <main class="dashboard-main">
                 <div class="dash-visitors">
-                    <div id="chartDiv" style="max-width: 740px;height: 400px;margin: 0px auto">
+                    <div class="dashboard-block-caption">
+                        <h3>Visitors</h3>
+                        <a href="#">...</a>
                     </div>
+                    <div class="dash-chart-container">
+                        <canvas id="visitChart" width="400px" height="200px"></canvas>
+                    </div>
+                    
                 </div>
                 <div class="dash-status">
                     <div class="dashboard-block-caption">
@@ -267,6 +273,13 @@
         </div>
     </div>
 </body>
+
+<!--Подключение скрипта прорисовки графиков и диаграмм. 
+    Инструкция здесь: https://code.tutsplus.com/series/getting-started-with-chartjs--cms-1160
+    -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/helpers.min.js"></script>
 <script src="js/chart.js"></script>
 
 </html>
