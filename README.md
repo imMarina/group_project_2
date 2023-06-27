@@ -1,15 +1,16 @@
 # group_project_2
 
-Групповой проект 2, ITgirlSchool
+# Групповой проект 2, ITgirlSchool
 
-Техническое задание (ТЗ):
-
+### Техническое задание (ТЗ):
 Сверстать административную панель сайта (админ-панель) по макету с Figma. 
-Ссылка в Figma: [https://www.figma.com/file/Pobm5LXxggvNycElG5oqVw/Admin-Dashboard-Web-(Community)?type=design&node-id=2-9758&t=qEEZyrt7tRVZfdZu-0]
+
+### Ссылка в Figma: 
+[https://www.figma.com/file/Pobm5LXxggvNycElG5oqVw/Admin-Dashboard-Web-(Community)?type=design&node-id=2-9758&t=qEEZyrt7tRVZfdZu-0]
 
 Использовать в работе bootstrap, htm и css или препроцессоры css, выбор на усмотрение.
 
 Сроки выполнения: 12.06.23 - 25.06.23
 
-Участники проекта:
-Марина Ш. (@imMarina), Анастасия М. (@sowlushka), Татьяна С. (@TatianaSambueva).
+### Участники проекта:
+Марина Ш. ([@imMarina](https://github.com/imMarina)), Анастасия М. ([@sowlushka](https://github.com/TatianaSambueva)), Татьяна С. ([@TatianaSambueva](https://github.com/TatianaSambueva)).
