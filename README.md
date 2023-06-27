@@ -9,16 +9,7 @@
 
 Использовать в работе bootstrap, htm и css или препроцессоры css, выбор на усмотрение.
 
-
 Сроки выполнения: 12.06.23 - 25.06.23
 
 Участники проекта:
-
-Рината Д. https://github.com/RinataDyakonova
-
-Марина Ш. https://github.com/imMarina
-
-Анастасия М. https://github.com/sowlushka
-
-Татьяна С. https://github.com/TatianaSambueva
-
+Марина Ш. (@imMarina), Анастасия М. (@sowlushka), Татьяна С. (@TatianaSambueva).
