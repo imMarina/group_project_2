@@ -9,3 +9,16 @@ body {
     font-size: 12.64px;
     line-height: 16px;
 }
+
+main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: blanchedalmond;
+}
+
+a{
+    text-decoration: none;
+}

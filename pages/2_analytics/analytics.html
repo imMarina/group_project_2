@@ -19,9 +19,9 @@
     <title>Wons - Product Analytics</title>
 </head>
 
-<body class="container-fluid bg-light d-flex">
+<body class="container-fluid bg-light d-flex min-vh-100">
 
-    <div class="page">
+    <div class="page mw-100">
 
         <div class="row flex-nowrap">
 
@@ -133,14 +133,14 @@
                 </header>
                 <!-- Start Header-top -->
 
-                <main class="container mt-5">
+                <div class="main container mt-5 bg-light">
                     <div class="row d-flex flex-row flex-nowrap">
                         <div class="col-auto">
 
                             <section class="row">
                                 <div class="col d-flex flex-nowrap gap-5">
                                     <!--Start Sales Card -->
-                                    <div class="card border-light position-relative" id="sales_block">
+                                    <div class="card border-light rounded-4 position-relative" id="sales_block">
                                         <div class="dropdown position-absolute top-0 end-0">
                                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false" style="color: #03A89E;">
@@ -175,7 +175,7 @@
                                     </div><!-- End Sales Card -->
 
                                     <!-- Revenue Card -->
-                                    <div class="card border-light position-relative" id="sales_block">
+                                    <div class="card border-light rounded-4 position-relative" id="sales_block">
                                         <div class="dropdown position-absolute top-0 end-0">
                                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false" style="color: #03A89E;">
@@ -213,7 +213,7 @@
                             <section class="row">
                                 <!-- Start Top Selling -->
                                 <div class="col mt-4">
-                                    <div class="card border-light position-relative" id="top_selling_block">
+                                    <div class="card border-light rounded-4 position-relative" id="top_selling_block">
                                         <div class="dropdown position-absolute end-0">
                                             <button class="btn dropdown-toggle text-primary" type="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -339,7 +339,7 @@
 
                                 <!-- Start Progress Bars-->
                                 <div class="col">
-                                    <div class="card border-light" id="analytics_block">
+                                    <div class="card border-light rounded-4" id="analytics_block">
                                         <div class="card-body">
                                             <h5 class="card-title text-secondary fs-4">Product Add
                                                 by Month</h5>
@@ -400,7 +400,7 @@
 
                                 <!-- Doughnut Chart -->
                                 <div class="col mt-4">
-                                    <div class="card border-light" id="analytics_block">
+                                    <div class="card border-light rounded-4" id="analytics_block">
                                         <div class="card-body">
                                             <h5 class="card-title text-secondary fs-4">Product Sales Analytics</h5>
                                             <canvas id="doughnutChart" style="max-height: 250px;"></canvas>
@@ -434,7 +434,7 @@
                             </div>
                         </div>
                     </div> <!-- end row (the main row)-->
-                </main>
+                </div>
             </div> <!-- end col (after sidebar) -->
 
         </div>
