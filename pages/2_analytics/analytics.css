@@ -1,4 +1,4 @@
-@import url('styles/style.css');
+@import url('../../styles/style.css');
 
 
 :root {
@@ -9,9 +9,17 @@
 
 }
 
-/*.col {
-    border: 1px solid red;
-}*/
+html,
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Sidebar/Navbar */
 
 .nav-pills li a:hover {
     background-color: rgb(231, 222, 222);
@@ -27,7 +35,7 @@
 
 #btn-absolute {
     bottom: 15%;
-    left: 18%;
+    left: 12%;
     width: 65%;
     height: 15%;
     color: white;
@@ -35,6 +43,8 @@
     border-radius: 10px;
     border: none;
 }
+
+/* Main/ 1st section - chart blocks*/
 
 #sales_block {
     width: 364px;
@@ -45,15 +55,19 @@
     bottom: 10px;
 }
 
+#img_wave img {
+    max-width: 100%;
+}
+
 #card-icon {
     width: 64px;
     height: 64px;
     flex-shrink: 0;
     flex-grow: 0;
-    /* background: #d9d8ee;*/
 }
 
-/* Start Top Selling Products */
+/* Main/ 1st section - Top Selling Products */
+
 i.fa-award {
     color: var(--color-primary-pink);
 }
@@ -155,10 +169,9 @@ tbody a {
 }
 
 /* Start Progress-bar block*/
-
 #analytics_block {
     width: 430px;
-    height: 300px;
+    height: 340px;
 }
 
 #progress__first-color {
@@ -172,3 +185,5 @@ tbody a {
 #progress-bar_index {
     width: 30px;
 }
+
+/* Doughnut CHart */
