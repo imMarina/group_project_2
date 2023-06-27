@@ -79,6 +79,20 @@
 
             color: #06152B;
         }
+
+        .create-invoice {
+            background: #3A36DB;
+            font-size: 16px;
+            line-height: 20px
+        }
+
+        .send-invoice {
+            background-color: white;
+            color: #3A36DB;
+            font-size: 16px;
+            line-height: 20px;
+            border: #3A36DB;
+        }
     </style>
 
 </head>
@@ -149,7 +163,7 @@
                             <h6 class="mt-4"> Product Description</h6>
                             <thead>
                                 <tr>
-                                    <th class="table-names d-flex" scope="col">Product Name
+                                    <th class="table-names" scope="col">Product Name
                                         <!-- <div class="dropdown"> -->
                                         <button class="btn btn-default p-0 mb-0 mx-1 btn-sm dropdown-toggle"
                                             type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -218,7 +232,7 @@
                                     <td>10 Pcs</td>
                                     <td class="amountrow">$ 10,000</td>
                                     <td>
-                                        <button class="btn btn-default btn-sm"> <img
+                                        <button class="btn btn-default btn-sm m-auto"> <img
                                                 src="/group_project_2/pages/3_invoice/images/delete3.svg"
                                                 style="width: 25px;"></button>
                                     </td>
@@ -248,16 +262,13 @@
                             </tbody>
                         </table>
 
-
-
-
-                        <div class="row d-flex justify-content-around">
+                        <div class="row">
                             <div class="col">
-                                <button class="btn btn-outline-light">Send Invoice</button>
+                                <button class="btn btn-light send-invoice">Send Invoice</button>
                             </div>
 
                             <div class="col">
-                                <button class="btn btn-primary px-3">Create Invoice</button>
+                                <button class="btn btn-primary px-3 create-invoice">Create Invoice</button>
                             </div>
                         </div>
                     </div>
