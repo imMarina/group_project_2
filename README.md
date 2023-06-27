@@ -13,4 +13,4 @@
 Сроки выполнения: 12.06.23 - 25.06.23
 
 ### Участники проекта:
-Марина Ш. ([@imMarina](https://github.com/imMarina)), Анастасия М. ([@sowlushka](https://github.com/TatianaSambueva)), Татьяна С. ([@TatianaSambueva](https://github.com/TatianaSambueva)).
+Марина Ш. ([@imMarina](https://github.com/imMarina)), Анастасия М. ([@sowlushka](https://github.com/sowlushka)), Татьяна С. ([@TatianaSambueva](https://github.com/TatianaSambueva)).
