@@ -245,14 +245,6 @@ h1 {
     padding: 26px 26px 13px;
 }
 
-/*4-я ячейка грида*/
-.dash-top-serv {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-color: var(--nav-panel-bg-color);
-    border-radius: 11px;
-}
-
 table {
     width: 100%;
     font-size: 13.35px;
@@ -327,4 +319,43 @@ th img {
 .td-amount {
     text-align: right;
     padding-right: 1vw;
+}
+
+/*4-я ячейка грида*/
+.dash-top-serv {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--nav-panel-bg-color);
+    border-radius: 11px;
+    padding: 5% 5% 2.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-top-serv-contaner {
+    /*border: solid 1px rgb(226, 10, 10);*/
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-top-serv-card {
+    /*border: solid 1px black;*/
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dash-top-serv-card-text {
+    /*border: solid 1px rgb(19, 8, 168);*/
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dash-selected-img {
+    border: 10px solid #d0e1ec;
+    border-radius: 10px;
 }

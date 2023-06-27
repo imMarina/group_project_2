@@ -5,6 +5,10 @@ Chart.defaults.font.family = "DM Sans";
 Chart.defaults.font.size = 13;
 Chart.defaults.color = "#06152B";
 
+let gradient = visitCanvas.createLinearGradient(0, 0, 600, 0);
+gradient.addColorStop(0, 'rgba(58, 54, 219, 0.5)');
+gradient.addColorStop(1, 'rgba(255, 105, 180, 0.35)');
+
 let visitData = {
   labels: ["10am", "11am", "12am", "01am", "02am", "03am", "04am", "05am", "06am", "07am"],
   datasets: [{
@@ -15,7 +19,7 @@ let visitData = {
     fill: true,
     borderColor: '#3A36DB',//цвет линии
     borderWidth: 1,//толщина линии
-    backgroundColor: 'rgba(100,0,0,0.5)',
+    backgroundColor: gradient,
     /*borderDash: [20, 10, 60, 10],*/
 
     /*Стили точек на графике */
