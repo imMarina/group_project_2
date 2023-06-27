@@ -12,9 +12,9 @@
     --nav-panel-button-hover-bg-color: #E069B4;
     /*Цвет фона кнопки Upgrade при наведении. Тёмная тема: #705CFF*/
 
-    --nav-panel-margin-toggle: 32px;
+    --nav-panel-margin-toggle: 2vw;
     /*Убираемые маржины боковой панели*/
-    --nav-panel-margin-right: 32px;
+    --nav-panel-margin-right: 1vw;
     /*Правый маржин фиксированного размера*/
     --nav-panel_element-padding-left: 30px;
 }
