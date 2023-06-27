@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-@import url('../../styles/navigation.css');
+@import url('../../../styles/navigation.css');
 @import url('ring-diagr.css');
 /*fСтили кольцевой диаграммы. Взято отсюда https://techrocks.ru/2022/01/11/pie-chart-in-pure-css-and-html/*/
 @import url('chart-visitors.css');
