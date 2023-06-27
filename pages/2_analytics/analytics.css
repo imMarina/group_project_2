@@ -45,6 +45,10 @@
     bottom: 10px;
 }
 
+#img_wave img {
+    max-width: 100%;
+}
+
 #card-icon {
     width: 64px;
     height: 64px;
