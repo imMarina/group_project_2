@@ -96,6 +96,7 @@ h1 {
     font-size: 15px;
 }
 
+
 .dashboard-main {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
