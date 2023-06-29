@@ -1,1 +1,35 @@
-@import url(styles/style.css)
+/* @import url(../../styles_common/style.css) */
+
+:root {
+    --color-primary-blue: #235ad1;
+    --color-primary-pink: #FF69B4;
+    --color-text: #06152B;
+    --color-button-dropdown: #03A89E;
+}
+
+/* Sidebar/Navbar */
+.nav-pills li a:hover {
+    background-color: rgb(231, 222, 222);
+}
+
+#link_selected {
+    background-color: rgb(248, 238, 238)
+}
+
+#messages-number {
+    color: var(--color-primary-pink);
+}
+
+.custom-btn-absolute {
+    bottom: 15%;
+    left: 17%;
+    width: 65%;
+    height: 15%;
+    font-size: smaller;
+    color: white;
+    background-color: var(--color-primary-pink);
+    border-radius: 10px;
+    border: none;
+}
+
+/* End Navbar/Sidebar*/

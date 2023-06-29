@@ -5,25 +5,25 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=o">
-    <link rel="stylesheet" href="/group_project_2/styles/normalize.css">
-    <link rel="stylesheet" href="/group_project_2/pages/3_invoice/invoice.css">
+    <link rel="stylesheet" href="../../styles_common/normalize.css">
+    <link rel="stylesheet" href="../3_invoice/invoice.css">
     <link href="Nunito-VariableFont_wght.ttf">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
-    <title>Invoice</title>
+    <link rel="icon" href="../2_analytics/img/logo_main.svg" sizes="any" type="image/svg+xml">
+    <title>Wons - Invoice</title>
 
     <style>
         .main-wrapper {
             height: 100vh;
         }
 
-        .column1 {
+        /*  .column1 {
             background-color: lightgrey;
-        }
+        }*/
 
         .names,
         h6 {
@@ -40,7 +40,7 @@
         }
 
         .address {
-            background-image: url(/group_project_2/pages/3_invoice/images/Location.svg);
+            background-image: url(./group_project_2/pages/3_invoice/images/Location.svg);
             background-repeat: no-repeat;
             background-size: 15px;
             background-position: right;
@@ -73,10 +73,7 @@
             font-size: 14.22px;
             line-height: 19px;
             /* identical to box height */
-
-
             /* Light Version/Text */
-
             color: #06152B;
         }
 
@@ -94,20 +91,98 @@
             border: #3A36DB;
         }
     </style>
-
 </head>
 
-<body>
+<body class="container-fluid bg-light">
+
     <main class="main-wrapper">
+        <div class="mh-100">
 
-        <div class="container-fluid mh-100">
+            <div class="row d-flex flex-nowrap">
 
-            <div class="row">
+                <!-- Start Sidebar/Navbar -->
+                <div class="col-auto bg-white d-flex flex-column justify-content-around me-4">
 
-                <div class="col-2 column">
-                    Menu
-                </div>
+                    <div class="navbar-brand d-none d-sm-flex justify-content-center">
+                        <img src="../2_analytics/img/Logo.svg" alt="Logo">
+                    </div>
 
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-secondary" href="../1_dashboard/dashboard.html">
+                                <i class="fs-6 fas fa-th-large"></i>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-3">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0" aria-current="page">
+                            <a class="nav-link text-secondary" aria-current="page" href="../2_analytics/analytics.html">
+                                <i class="fs-6 fa-solid fa-chart-simple"></i>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-3">Analytics</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-primary" id="link_selected" href="../3_invoice/invoice.html">
+                                <i class="fs-6 fa-solid fa-file-invoice"></i>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-3">Invoice</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-secondary" href="#!">
+                                <i class="fs-6 fas fa-clipboard-list"></i>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-3">Schedule</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-secondary" href="#!">
+                                <i class="fs-6 fa-solid fa-calendar-days"></i>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-3">Calendar</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-secondary" href="#!">
+                                <i class="fs-6 fas fa-envelope"></i>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-3">Messages</span>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-2" id="messages-number">49</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-secondary" href="#!">
+                                <i class="fs-6 fa-solid fa-bell"></i>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-3">Notification</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item py-2 py-sm-0">
+                            <a class="nav-link text-secondary" href="#!">
+                                <i class="fs-6 fa-solid fa-gear"></i>
+                                <span class="d-none d-sm-inline fs-6 fw-semibold ms-3">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-none d-sm-inline d-flex flex-column upgrade position-relative">
+                        <img src="../1_dashboard/images/upgrade.png" alt="The pink lamp">
+                        <button class="custom-btn-absolute position-absolute">Upgrade Now</button>
+                    </div>
+
+                    <div class="d-flex flex-lg-row justify-content-around">
+                        <img src="../2_analytics/img/Profile_photo.png" alt="Profile photo" width="43" height="45"
+                            class="rounded-2">
+                        <div class="d-flex flex-column">
+                            <span class="d-none d-sm-inline">Easin Arafat</span>
+                            <span class="d-none d-sm-inline text-secondary">Free Account</span>
+                        </div>
+                        <a href="#!">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </div>
+                </div> <!-- End Sidebar/Navbar -->
 
                 <div class="col-5 p-2 ps-3 h-100 column1">
 
@@ -116,11 +191,8 @@
                             <h4>Create New Invoice</h4>
                         </div>
                         <div class="align-self-center p-1 m-3 photo">
-                            <button class="btn btn-default btn-sm"><img
-                                    src="/group_project_2/pages/3_invoice/images/photo2.svg"
+                            <button class="btn btn-default btn-sm"><img src="./images/photo2.svg" alt="Photo camera"
                                     style="height: 80px;"></button>
-
-
                         </div>
                         <form>
                             <div class="row">
@@ -131,16 +203,13 @@
                                 <div class="col input-name gy-2 names mt-4">
                                     <label for="date">Date</label>
                                     <input type="date" class="form-control" id="date" placeholder="01.12.2021">
-
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col input-name gy-2 names">
-
                                     <label for="name">Name</label>
                                     <input type="name" class="form-control" id="name" placeholder="Alison G.">
-
                                 </div>
                             </div>
 
@@ -154,13 +223,12 @@
                                     <label for="inputAddress">Address</label>
                                     <input type="text" class="form-control address" id="inputAddress"
                                         placeholder="Street">
-
                                 </div>
                             </div>
                         </form>
 
+                        <h6 class="mt-4"> Product Description</h6>
                         <table class="table">
-                            <h6 class="mt-4"> Product Description</h6>
                             <thead>
                                 <tr>
                                     <th class="table-names" scope="col">Product Name
@@ -168,7 +236,6 @@
                                         <button class="btn btn-default p-0 mb-0 mx-1 btn-sm dropdown-toggle"
                                             type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                             aria-expanded="false">
-
                                         </button>
                                         <ul class="dropdown-menu fw-light fs-6" aria-labelledby="dropdownMenuButton1">
                                             <li><a class="dropdown-item" href="#">ipad 2021</a></li>
@@ -232,9 +299,8 @@
                                     <td>10 Pcs</td>
                                     <td class="amountrow">$ 10,000</td>
                                     <td>
-                                        <button class="btn btn-default btn-sm m-auto"> <img
-                                                src="/group_project_2/pages/3_invoice/images/delete3.svg"
-                                                style="width: 25px;"></button>
+                                        <button class="btn btn-default btn-sm m-auto"> <img src="./images/delete3.svg"
+                                                alt="Button delete" style="width: 25px;"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -243,9 +309,8 @@
                                     <td>10 Pcs</td>
                                     <td class="amountrow">$ 150,000</td>
                                     <td>
-                                        <button class="btn btn-default btn-sm"> <img
-                                                src="/group_project_2/pages/3_invoice/images/delete3.svg"
-                                                style="width: 25px;"></button>
+                                        <button class="btn btn-default btn-sm"> <img src="./images/delete3.svg"
+                                                alt="button delete" style="width: 25px;"></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -254,9 +319,8 @@
                                     <td>10 Pcs</td>
                                     <td class="amountrow"> $8,850</td>
                                     <td>
-                                        <button class="btn btn-default btn-sm"> <img
-                                                src="/group_project_2/pages/3_invoice/images/delete3.svg"
-                                                style="width: 25px;"></button>
+                                        <button class="btn btn-default btn-sm"> <img src="./images/delete3.svg"
+                                                alt="button delete" style="width: 25px;"></button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -286,27 +350,17 @@
                         </div>
 
                         <div>
-                            <img src="/group_project_2/pages/3_invoice/images/invoices.svg" class="card-img-bottom">
+                            <img src="./images/invoices.svg" alt="invoice list" class="card-img-bottom">
                         </div>
-
                     </div>
-
-
-
-
                 </div>
-
-
-
             </div>
         </div>
-
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
     </main>
+
+
+    </div>
+
 
     <!-- Fonts Awesome -->
     <script src="https://kit.fontawesome.com/725ecd5168.js" crossorigin="anonymous"></script>
