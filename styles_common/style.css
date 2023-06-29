@@ -10,7 +10,7 @@ body {
     line-height: 16px;
 }
 
-main{
+.main-page {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -19,6 +19,6 @@ main{
     background-color: blanchedalmond;
 }
 
-a{
+.main-page a {
     text-decoration: none;
 }
