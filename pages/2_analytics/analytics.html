@@ -24,9 +24,9 @@
 
 <!-- IMPORTANT: Custom class names start with "custom-" -->
 
-<body class="container-fluid bg-light d-flex overflow-auto">
+<body class="bg-light d-grid overflow-auto">
 
-    <div class="row d-flex flex-nowrap h-auto">
+    <div class="row d-flex flex-nowrap">
 
         <!-- Start Sidebar/Navbar -->
         <div class="col-auto bg-white d-flex flex-column justify-content-around me-4">
@@ -112,12 +112,12 @@
             </div>
         </div> <!-- End Sidebar/Navbar -->
 
-
+        <!-- Start The all right block -->
         <div class="col-auto">
 
             <!-- Start Header-top -->
-            <header class="container nav d-md-flex flex-column mt-4 px-3">
-                <div class="d-md-flex flex-row justify-content-between" id="header-top">
+            <header class="nav d-flex flex-column mt-4">
+                <div class="d-flex flex-row justify-content-between">
                     <h1 class="fs-3 fw-semibold">Product Analytics</h1>
                     <div>
                         <input class="btn bg-white" type="date">
@@ -125,320 +125,316 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-row mt-4 justify-content-between" id="header-bottom">
+                <div class="d-flex flex-row mt-4 justify-content-between">
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary rounded px-4" aria-current="page">Product</button>
+                        <button type="button" class="btn text-white rounded px-4" aria-current="page"
+                            id="header-btn_1">Product</button>
                         <button type="button" class="btn bg-white text-secondary px-4">Customer</button>
                     </div>
-                    <input class="btn btn-primary px-4" type="button" value="+ Add Product">
+                    <input class="btn text-white px-4" id="header-btn_2" type="button" value="+ Add Product">
                 </div>
             </header>
-            <!-- Start Header-top -->
+            <!-- End Header-top -->
 
-            <div class="main container mt-5 bg-light">
-                <div class="row d-flex flex-row flex-nowrap">
-                    <div class="col-auto">
+            <!-- Start main block with card elements -->
+            <div class="row mt-4 d-flex flex-nowrap">
 
-                        <section class="row">
-                            <div class="col d-flex flex-nowrap gap-5">
-                                <!--Start Sales Card -->
-                                <div class="card border-light rounded-4 position-relative" id="sales_block">
-                                    <div class="dropdown position-absolute top-0 end-0">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false" style="color: #03A89E;">
-                                            +1400 New Added
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end text-end">
-                                            <li><span class="dropdown-item-text text-secondary">Dynamics</span></li>
-                                            <li><a class="dropdown-item active bg-light" style="color: #03A89E;"
-                                                    href="#!">New
-                                                    Added</a></li>
-                                            <li><a class="dropdown-item" href="#!">Today</a></li>
-                                            <li><a class="dropdown-item" href="#!">This Month</a></li>
-                                            <li><a class="dropdown-item" href="#!">This Year</a></li>
-                                        </ul>
+                <!-- Start 3 card elements from the left-->
+                <div class="col-auto">
+
+                    <div class="row">
+                        <div class="col d-flex gap-4">
+                            <!--Start Sales Card -->
+                            <div class="card border-light rounded-4 position-relative" id="chart-block_1">
+
+                                <div class="dropdown position-absolute top-0 end-0 mw-100">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false" style="color: #03A89E;">
+                                        +1400 New Added
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end text-end">
+                                        <li><span class="dropdown-item-text text-secondary">Dynamics</span>
+                                        </li>
+                                        <li><a class="dropdown-item active bg-light" style="color: #03A89E;"
+                                                href="#!">New
+                                                Added</a></li>
+                                        <li><a class="dropdown-item" href="#!">Today</a></li>
+                                        <li><a class="dropdown-item" href="#!">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#!">This Year</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-body d-flex flex-row gap-3 justify-content-start mw-100">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                                        id="chart-icon_1">
+                                        <i class="fa-solid fa-box-open fs-4" style="color: #3a36db;"></i>
                                     </div>
 
-                                    <div class="card-body d-flex flex-row gap-3 justify-content-start mw-100">
-                                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
-                                            id="card-icon">
-                                            <i class="fa-solid fa-box-open fs-4" style="color: #3a36db;"></i>
-                                        </div>
-
-                                        <div class="d-flex flex-column gap-1">
-                                            <span class="text-secondary">Total Product</span>
-                                            <span class="fs-2 fw-bold"
-                                                style="color: #06152B; opacity: 0.7;">5,00,874</span>
-                                        </div>
-                                    </div>
-                                    <div class="position-absolute" id="img_wave">
-                                        <img src="./img/Chart_blue.png" alt="Chart blue color">
-                                    </div>
-                                </div><!-- End Sales Card -->
-
-                                <!-- Revenue Card -->
-                                <div class="card border-light rounded-4 position-relative" id="sales_block">
-                                    <div class="dropdown position-absolute top-0 end-0">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false" style="color: #03A89E;">
-                                            +1000 Sales Today
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end text-end">
-                                            <li><span class="dropdown-item-text text-secondary">Dynamics</span></li>
-                                            <li><a class="dropdown-item active bg-light" style="color: #03A89E;"
-                                                    href="#!">Today</a></li>
-                                            <li><a class="dropdown-item" href="#!">This Month</a></li>
-                                            <li><a class="dropdown-item" href="#!">This Year</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="card-body d-flex flex-row gap-3 justify-content-start">
-                                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
-                                            id="card-icon">
-                                            <i class="fa-solid fa-cart-shopping fs-4" style="color: #f0b719;"></i>
-                                        </div>
-
-                                        <div class="d-flex flex-column gap-2">
-                                            <span class="text-secondary">Total Sales</span>
-                                            <span class="fs-2 fw-bold"
-                                                style="color: #06152B; opacity: 0.7;">2,34,888</span>
-                                        </div>
-                                    </div>
-                                    <div class="position-absolute" id="img_wave">
-                                        <img src="./img/Chart_pink.png" alt="Chart pink color">
+                                    <div class="d-flex flex-column gap-1">
+                                        <span class="text-secondary">Total Product</span>
+                                        <span class="fs-2 fw-bold" style="color: #06152B; opacity: 0.7;">5,00,874</span>
                                     </div>
                                 </div>
-                                <!-- End Revenue Card -->
-                            </div>
-                        </section>
 
-                        <section class="row">
-                            <!-- Start Top Selling -->
-                            <div class="col mt-4">
-                                <div class="card border-light rounded-4 position-relative" id="top_selling_block">
-                                    <div class="dropdown position-absolute end-0">
-                                        <button class="btn dropdown-toggle text-primary" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            See More
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end text-end">
-                                            <li><span class="dropdown-item-text text-secondary">Dynamics</span></li>
-                                            <li><a class="dropdown-item" href="#!">Today</a></li>
-                                            <li><a class="dropdown-item" href="#!">This Month</a></li>
-                                            <li><a class="dropdown-item" href="#!">This Year</a></li>
-                                        </ul>
+                                <img class="mw-100 position-absolute" id="img-wave_1" src="./img/Chart_blue.png"
+                                    alt="Chart blue color">
+                            </div><!-- End Sales Card -->
+
+                            <!-- Revenue Card -->
+                            <div class="custom-sales_block card border-light rounded-4 position-relative"
+                                id="chart-block_2">
+                                <div class="dropdown position-absolute top-0 end-0">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false" style="color: #03A89E;">
+                                        +1000 Sales Today
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end text-end">
+                                        <li><span class="dropdown-item-text text-secondary">Dynamics</span></li>
+                                        <li><a class="dropdown-item active bg-light" style="color: #03A89E;"
+                                                href="#!">Today</a></li>
+                                        <li><a class="dropdown-item" href="#!">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#!">This Year</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-body d-flex flex-row gap-3 justify-content-start">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                                        id="chart-icon_2">
+                                        <i class="fa-solid fa-cart-shopping fs-4" style="color: #f0b719;"></i>
                                     </div>
 
-                                    <div class="card-body mt-3">
-                                        <h5 class="card-title" style="color: #06152B; opacity: 0.7;">Top Selling
-                                            Products</h5>
-
-                                        <table class="table table-borderless table-striped mt-3">
-
-                                            <thead>
-                                                <tr>
-                                                    <th class="fw-normal" scope="col">SN</th>
-                                                    <th class="fw-normal" scope="col">Name</th>
-                                                    <th class="fw-normal" scope="col">Price</th>
-                                                    <th class="fw-normal" scope="col">Total Order</th>
-                                                    <th class="fw-normal" scope="col">Total Sales</th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">
-                                                        <a href="#!"><i class="fas fa-award"></i></a>
-                                                    </th>
-                                                    <td class="d-flex align-items-center gap-2">
-                                                        <div class="card-img-inside-1 rounded-circle d-flex align-items-center justify-content-center"
-                                                            id="card-icon_2"></div>
-                                                        <a href="#!">Blutooth Devices</a>
-                                                    </td>
-                                                    <td>$10</td>
-                                                    <td class="fw-normal">34,666 Piece</td>
-                                                    <td class="selling-block__amount"
-                                                        style="color: var(--color-button-dropdown);">
-                                                        $3,46,660</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><i class="fas fa-award"></i></a>
-                                                    </th>
-                                                    <td class="d-flex align-items-center gap-2">
-                                                        <div class="card-img-inside-2 rounded-circle d-flex align-items-center justify-content-center"
-                                                            id="card-icon_2"></div>
-                                                        <a href="#!">Airdot</a>
-                                                    </td>
-                                                    <td>$15</td>
-                                                    <td class="fw-normal">20,000 Piece</td>
-                                                    <td class="selling-block__amount">$3,00,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><i class="fas fa-award"></i></a>
-                                                    </th>
-                                                    <td class="d-flex align-items-center gap-2">
-                                                        <div class="card-img-inside-3 rounded-circle d-flex align-items-center justify-content-center"
-                                                            id="card-icon_2">
-                                                        </div>
-                                                        <a href="#!">Shoes</a>
-                                                    </td>
-
-                                                    <td>$10</td>
-                                                    <td class="fw-normal">15,000 Piece</td>
-                                                    <td class="selling-block__amount"
-                                                        style="color: var(--color-button-dropdown);">$1,50,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#!" class="fw-normal text-secondary">
-                                                            4</a></th>
-                                                    <td class="d-flex align-items-center gap-2">
-                                                        <div class="card-img-inside-4 rounded-circle d-flex align-items-center justify-content-center"
-                                                            id="card-icon_2"></div>
-                                                        <a href="#!">Kids T-Shirt</a>
-                                                    </td>
-
-                                                    <td>$12</td>
-                                                    <td class="fw-normal">10,000 Piece</td>
-                                                    <td class="selling-block__amount">$1,20,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#!" class="fw-normal text-secondary">
-                                                            5</a></th>
-                                                    <td class="d-flex align-items-center gap-2">
-                                                        <div class="card-img-inside-5 rounded-circle d-flex align-items-center justify-content-center"
-                                                            id="card-icon_2"></div>
-                                                        <a href="#!">Smart Watch</a>
-                                                    </td>
-
-                                                    <td>$12</td>
-                                                    <td class="fw-normal">10,000 Piece</td>
-                                                    <td class="selling-block__amount"
-                                                        style="color: var(--color-button-dropdown);">$1,20,000</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#!" class="fw-normal text-secondary">
-                                                            6</a></th>
-                                                    <td class="d-flex align-items-center gap-2">
-                                                        <div class="card-img-inside-6 rounded-circle d-flex align-items-center justify-content-center"
-                                                            id="card-icon_2"></div>
-                                                        <a href="#!">Girls Top</a>
-                                                    </td>
-                                                    <td>$12</td>
-                                                    <td class="fw-normal">10,000 Piece</td>
-                                                    <td class="selling-block__amount">$1,20,000</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="d-flex flex-column gap-2">
+                                        <span class="text-secondary">Total Sales</span>
+                                        <span class="fs-2 fw-bold" style="color: #06152B; opacity: 0.7;">2,34,888</span>
                                     </div>
                                 </div>
-                            </div><!-- End Top Selling -->
-                        </section>
-                    </div>
 
-                    <div class="col-auto ms-4">
-
-                        <div class="row d-flex flex-column">
-
-                            <!-- Start Progress Bars-->
-                            <div class="col">
-                                <div class="card border-light rounded-4" id="analytics_block">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-secondary fs-4">Product Add
-                                            by Month</h5>
-                                        <div class="progress bg-white">
-                                            <span class="text-secondary" id="progress-bar_index">Jan</span>
-                                            <div class="progress-bar rounded-end" id="progress__first-color"
-                                                role="progressbar" style="width: 50%;" aria-valuenow="50"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                            <span class="ms-3">23,400</span>
-                                        </div>
-
-                                        <div class="progress mt-3 bg-white">
-                                            <span class="text-secondary" id="progress-bar_index">Feb</span>
-                                            <div class="progress-bar rounded-end" id="progress__second-color"
-                                                role="progressbar" style="width: 25%" aria-valuenow="25"
-                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                            <span class="ms-3">15,000</span>
-                                        </div>
-                                        <div class="progress mt-3 bg-white">
-                                            <span class="text-secondary" id="progress-bar_index">Mar</span>
-                                            <div class="progress-bar rounded-end" id="progress__first-color"
-                                                role="progressbar" style="width: 60%" aria-valuenow="60"
-                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                            <span class="ms-3">30,000</span>
-                                        </div>
-                                        <div class="progress mt-3 bg-white">
-                                            <span class="text-secondary" id="progress-bar_index">Apr</span>
-                                            <div class="progress-bar rounded-end" id="progress__second-color"
-                                                role="progressbar" style="width: 45%" aria-valuenow="45"
-                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                            <span class="ms-3">22,000</span>
-                                        </div>
-                                        <div class="progress mt-3 bg-white">
-                                            <span class="text-secondary" id="progress-bar_index">May</span>
-                                            <div class="progress-bar rounded-end" id="progress__second-color"
-                                                role="progressbar" aria-label="Basic example" style="width: 15%"
-                                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                            <span class="ms-3">10,000</span>
-                                        </div>
-                                        <div class="progress mt-3 bg-white">
-                                            <span class="text-secondary" id="progress-bar_index">Jun</span>
-                                            <div class="progress-bar rounded-end" id="progress__first-color"
-                                                role="progressbar" style="width: 70%" aria-valuenow="70"
-                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                            <span class="ms-3">23,400</span>
-                                        </div>
-                                        <div class="progress mt-3 bg-white">
-                                            <span class="text-secondary" id="progress-bar_index">Jul</span>
-                                            <div class="progress-bar rounded-end" id="progress__second-color"
-                                                role="progressbar" style="width: 6%" aria-valuenow="6" aria-valuemin="0"
-                                                aria-valuemax="100"></div>
-                                            <span class="ms-3">5,400</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- End Progress Bars -->
-
-                            <!-- Doughnut Chart -->
-                            <div class="col mt-4">
-                                <div class="card border-light rounded-4" id="analytics_block">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-secondary fs-4">Product Sales Analytics</h5>
-                                        <canvas id="doughnutChart" style="max-height: 250px;"></canvas>
-                                        <script>
-                                            document.addEventListener("DOMContentLoaded", () => {
-                                                new Chart(document.querySelector('#doughnutChart'), {
-                                                    type: 'doughnut',
-                                                    data: {
-                                                        labels: [
-                                                            'Total Sales',
-                                                            'Total Order',
-                                                            'Order Cancel'
-                                                        ],
-                                                        datasets: [{
-                                                            label: 'My First Dataset',
-                                                            data: [250, 70, 100],
-                                                            backgroundColor: [
-                                                                'rgb(58, 54, 219)',
-                                                                'rgb(3, 168, 158)',
-                                                                'rgb(255, 105, 180)'
-                                                            ],
-                                                            hoverOffset: 4
-                                                        }]
-                                                    }
-                                                });
-                                            });
-                                        </script>
-                                    </div>
-                                </div>
-                            </div> <!-- End Doughnut CHart -->
+                                <img class="mw-100 position-absolute" id="img-wave_2" src="./img/Chart_pink.png"
+                                    alt="Chart pink color">
+                            </div> <!-- End Revenue Card -->
                         </div>
                     </div>
-                </div> <!-- end row (the main row)-->
-            </div>
-        </div> <!-- end col (after sidebar) -->
-    </div>
+
+                    <div class="row">
+                        <!-- Start Top Selling -->
+                        <div class="col mt-4">
+                            <div class="card border-light rounded-4 position-relative" id="top_selling_block">
+                                <div class="dropdown position-absolute end-0">
+                                    <button class="btn dropdown-toggle text-primary" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        See More
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end text-end">
+                                        <li><span class="dropdown-item-text text-secondary">Dynamics</span></li>
+                                        <li><a class="dropdown-item" href="#!">Today</a></li>
+                                        <li><a class="dropdown-item" href="#!">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#!">This Year</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-body mt-3">
+                                    <h5 class="card-title" style="color: #06152B; opacity: 0.7;">Top Selling
+                                        Products</h5>
+
+                                    <table class="table table-borderless table-striped mt-3">
+
+                                        <thead>
+                                            <tr>
+                                                <th class="fw-normal" scope="col">SN</th>
+                                                <th class="fw-normal" scope="col">Name</th>
+                                                <th class="fw-normal" scope="col">Price</th>
+                                                <th class="fw-normal" scope="col">Total Order</th>
+                                                <th class="fw-normal" scope="col">Total Sales</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <a href="#!"><i class="fas fa-award"></i></a>
+                                                </th>
+                                                <td class="d-flex align-items-center gap-2">
+                                                    <div
+                                                        class="custom-icon card-img-inside-1 rounded-circle d-flex align-items-center justify-content-center">
+                                                    </div>
+                                                    <a href="#!">Blutooth Devices</a>
+                                                </td>
+                                                <td>$10</td>
+                                                <td class="fw-normal">34,666 Piece</td>
+                                                <td class="selling-block__amount"
+                                                    style="color: var(--color-button-dropdown);">
+                                                    $3,46,660</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#"><i class="fas fa-award"></i></a>
+                                                </th>
+                                                <td class="d-flex align-items-center gap-2">
+                                                    <div
+                                                        class="custom-icon card-img-inside-2 rounded-circle d-flex align-items-center justify-content-center">
+                                                    </div>
+                                                    <a href="#!">Airdot</a>
+                                                </td>
+                                                <td>$15</td>
+                                                <td class="fw-normal">20,000 Piece</td>
+                                                <td class="selling-block__amount">$3,00,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#"><i class="fas fa-award"></i></a>
+                                                </th>
+                                                <td class="d-flex align-items-center gap-2">
+                                                    <div
+                                                        class="custom-icon card-img-inside-3 rounded-circle d-flex align-items-center justify-content-center">
+                                                    </div>
+                                                    <a href="#!">Shoes</a>
+                                                </td>
+
+                                                <td>$10</td>
+                                                <td class="fw-normal">15,000 Piece</td>
+                                                <td class="selling-block__amount"
+                                                    style="color: var(--color-button-dropdown);">$1,50,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#!" class="fw-normal text-secondary">
+                                                        4</a></th>
+                                                <td class="d-flex align-items-center gap-2">
+                                                    <div
+                                                        class="custom-icon card-img-inside-4 rounded-circle d-flex align-items-center justify-content-center">
+                                                    </div>
+                                                    <a href="#!">Kids T-Shirt</a>
+                                                </td>
+
+                                                <td>$12</td>
+                                                <td class="fw-normal">10,000 Piece</td>
+                                                <td class="selling-block__amount">$1,20,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#!" class="fw-normal text-secondary">
+                                                        5</a></th>
+                                                <td class="d-flex align-items-center gap-2">
+                                                    <div
+                                                        class="custom-icon card-img-inside-5 rounded-circle d-flex align-items-center justify-content-center">
+                                                    </div>
+                                                    <a href="#!">Smart Watch</a>
+                                                </td>
+
+                                                <td>$12</td>
+                                                <td class="fw-normal">10,000 Piece</td>
+                                                <td class="selling-block__amount"
+                                                    style="color: var(--color-button-dropdown);">$1,20,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#!" class="fw-normal text-secondary">
+                                                        6</a></th>
+                                                <td class="d-flex align-items-center gap-2">
+                                                    <div
+                                                        class="custom-icon card-img-inside-6 rounded-circle d-flex align-items-center justify-content-center">
+                                                    </div>
+                                                    <a href="#!">Girls Top</a>
+                                                </td>
+                                                <td>$12</td>
+                                                <td class="fw-normal">10,000 Piece</td>
+                                                <td class="selling-block__amount">$1,20,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- End Top Selling -->
+                    </div>
+                </div> <!-- End 3 card elements from the left-->
+
+                <!-- Start 2 card elements from the right-->
+                <div class="col-auto d-flex flex-column gap-4">
+
+                    <!-- Start Progress Bars-->
+                    <div class="custom-analytics_block card border-light rounded-4">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary fs-4 mb-3">Product Add
+                                by Month</h5>
+                            <div class="progress bg-white">
+                                <span class="custom-progress-bar_index text-secondary">Jan</span>
+                                <div class="progress-bar rounded-end" id="progress__first-color-1" role="progressbar"
+                                    style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                                <span class="ms-3">23,400</span>
+                            </div>
+
+                            <div class="progress mt-4 bg-white">
+                                <span class="custom-progress-bar_index text-secondary">Feb</span>
+                                <div class="progress-bar rounded-end" id="progress__second-color-1" role="progressbar"
+                                    style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="ms-3">15,000</span>
+                            </div>
+                            <div class="progress mt-4 bg-white">
+                                <span class="custom-progress-bar_index text-secondary">Mar</span>
+                                <div class="progress-bar rounded-end" id="progress__first-color-2" role="progressbar"
+                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="ms-3">30,000</span>
+                            </div>
+                            <div class="progress mt-4 bg-white">
+                                <span class="custom-progress-bar_index text-secondary">Apr</span>
+                                <div class="progress-bar rounded-end" id="progress__second-color-2" role="progressbar"
+                                    style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="ms-3">22,000</span>
+                            </div>
+                            <div class="progress mt-4 bg-white">
+                                <span class="custom-progress-bar_index text-secondary">May</span>
+                                <div class="progress-bar rounded-end" id="progress__second-color-3" role="progressbar"
+                                    aria-label="Basic example" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                                <span class="ms-3">10,000</span>
+                            </div>
+                            <div class="progress mt-4 bg-white">
+                                <span class="custom-progress-bar_index text-secondary">Jun</span>
+                                <div class="progress-bar rounded-end" id="progress__first-color-3" role="progressbar"
+                                    style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="ms-3">23,400</span>
+                            </div>
+                            <div class="progress mt-4 bg-white">
+                                <span class="custom-progress-bar_index text-secondary">Jul</span>
+                                <div class="progress-bar rounded-end" id="progress__second-color-4" role="progressbar"
+                                    style="width: 6%" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="ms-3">5,400</span>
+                            </div>
+                        </div>
+                    </div> <!-- End Progress Bars -->
+
+                    <!-- Doughnut Chart -->
+                    <div class="card border-light rounded-4" id="analytics_block">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary fs-4 mb-3">Product Sales Analytics</h5>
+                            <canvas id="doughnutChart" style="max-height: 250px;"></canvas>
+                            <script>
+                                document.addEventListener("DOMContentLoaded", () => {
+                                    new Chart(document.querySelector('#doughnutChart'), {
+                                        type: 'doughnut',
+                                        data: {
+                                            labels: [
+                                                'Total Sales',
+                                                'Total Order',
+                                                'Order Cancel'
+                                            ],
+                                            datasets: [{
+                                                label: 'My First Dataset',
+                                                data: [250, 70, 100],
+                                                backgroundColor: [
+                                                    'rgb(58, 54, 219)',
+                                                    'rgb(3, 168, 158)',
+                                                    'rgb(255, 105, 180)'
+                                                ],
+                                                hoverOffset: 4
+                                            }]
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div><!-- End Doughnut CHart -->
+                </div><!-- End 2 card elements from the right-->
+            </div> <!-- End main block with card elements -->
+        </div><!-- End col (The all right block) -->
+    </div> <!-- End row (the main row) -->
+
 
 
     <script src="./chart_1.umd.js"></script>
