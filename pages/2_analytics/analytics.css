@@ -9,10 +9,8 @@
     --color-primary-pink: #FF69B4;
     --color-text: #06152B;
     --color-button-dropdown: #03A89E;
-
 }
 
-html,
 body {
     width: 100%;
 }
@@ -25,13 +23,7 @@ body {
     line-height: 16px;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 /* Sidebar/Navbar */
-
 .nav-pills li a:hover {
     background-color: rgb(231, 222, 222);
 }
@@ -56,40 +48,43 @@ img {
     border: none;
 }
 
-/* Main/ 1st section - chart blocks*/
+/*Header*/
+#header-btn_1,
+#header-btn_2 {
+    background-color: var(--color-primary-blue);
+}
 
-#sales_block {
+/* Start Sales Card (chart blocks) */
+#chart-block_1,
+#chart-block_2 {
     width: 364px;
     height: 200px;
 }
 
-#img_wave {
+#img-wave_1,
+#img-wave_2 {
     bottom: 10px;
 }
 
-#img_wave img {
-    max-width: 100%;
-}
-
-#card-icon {
+#chart-icon_1,
+#chart-icon_2 {
     width: 64px;
     height: 64px;
     flex-shrink: 0;
     flex-grow: 0;
 }
 
-/* Main/ 1st section - Top Selling Products */
+/* Start Top Selling BLOCK */
+#top_selling_block {
+    width: 754px;
+    height: 475px;
+}
 
 i.fa-award {
     color: var(--color-primary-pink);
 }
 
-#top_selling_block {
-    width: 780px;
-    height: 487px;
-}
-
-#card-icon_2 {
+.custom-icon {
     width: 37px;
     height: 37px;
     flex-shrink: 0;
@@ -107,7 +102,6 @@ tbody a {
 }
 
 /* Can't work at the same time attributes bg-image and bg-color, why? */
-
 .card-img-inside-1 {
     /*    background: var(--color-primary-pink), url(./img/Headphones.svg);*/
 
@@ -132,7 +126,6 @@ tbody a {
 
     background: #99B2C6;
     opacity: 0.2;
-
 }
 
 .card-img-inside-3 {
@@ -184,21 +177,31 @@ tbody a {
 }
 
 /* Start Progress-bar block*/
+.custom-analytics_block {
+    width: 430px;
+    height: 344px;
+}
+
+.custom-progress-bar_index {
+    width: 30px;
+}
+
+#progress__first-color-1,
+#progress__first-color-2,
+#progress__first-color-3 {
+    background-color: var(--color-primary-pink);
+}
+
+#progress__second-color-1,
+#progress__second-color-2,
+#progress__second-color-3,
+#progress__second-color-4 {
+    background-color: var(--color-primary-blue);
+}
+
+/* Doughnut CHart */
+
 #analytics_block {
     width: 430px;
     height: 340px;
 }
-
-#progress__first-color {
-    background-color: var(--color-primary-pink);
-}
-
-#progress__second-color {
-    background-color: var(--color-primary-blue);
-}
-
-#progress-bar_index {
-    width: 30px;
-}
-
-/* Doughnut CHart */
